@@ -1,5 +1,6 @@
-var f = [1, 2, 3, 'Hi', 'go'];
-for (var i = 0; i < 3; i++) {
-    console.log(f);
-}
-console.log(f);
+var message;
+message = 'abc';
+// 1 way
+var check1Way = message.endsWith('c');
+//anotherWay
+var check2Way = message.endsWith('c');
