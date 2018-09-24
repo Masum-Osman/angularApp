@@ -1,12 +1,7 @@
-var Point = /** @class */ (function () {
-    function Point(x, y) {
-        this.x = x;
-        this.y = y;
-    }
-    Point.prototype.draw = function () {
-        console.log('Here, your X: ' + this.x + ' and Y: ' + this.y);
-    };
-    return Point;
-}());
-var now_point = new Point(10, 20);
+"use strict";
+exports.__esModule = true;
+var point_1 = require("./point");
+var now_point = new point_1.Point(10, 20);
+var x = now_point.getValue();
+console.log(x);
 now_point.draw();
