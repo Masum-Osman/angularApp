@@ -7,6 +7,22 @@ import { Component, OnInit } from '@angular/core';
 })
 export class MarvelHerosComponent implements OnInit {
 
+  heros = ['Iron Man', 'Spider Man', 'Black Panther', 'Ant Man', 'Super Man', 'X-Man'];
+ 
+  inputHero = null;
+  btnDisable = false; 
+  Adding = false;
+
+  addhero () {
+      this.heros.push(this.inputHero);
+      this.inputHero = null;
+      this.Adding = false;
+  }
+
+  addMore() {
+    this.Adding = !this.Adding;
+  }
+
   constructor() { }
 
   ngOnInit() {
